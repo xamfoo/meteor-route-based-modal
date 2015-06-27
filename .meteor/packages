@@ -1,0 +1,29 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+#
+msavin:mongol
+
+meteor-platform
+amplify
+browser-policy
+less
+random
+reactive-var
+reactive-dict
+underscore
+
+aldeed:simple-schema
+edgee:slingshot
+fongandrew:find-and-modify
+iron:router
+jamiter:pluralize
+lepozepo:accounting
+meteorhacks:kadira
+meteorhacks:fast-render
+meteorhacks:subs-manager
+mrt:moment
+vsivsi:job-collection
+nemo64:bootstrap

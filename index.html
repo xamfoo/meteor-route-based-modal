@@ -1,0 +1,64 @@
+<head>
+  <title>Route based modal</title>
+</head>
+
+<body>
+</body>
+
+<template name="Home">
+  {{> Nav}}
+
+  <h1>Home</h1>
+
+  <p>
+    Data Title: {{title}}
+  </p>
+</template>
+
+<template name="One">
+  {{> modal}}
+  {{> Nav}}
+
+  <h1>Page One</h1>
+</template>
+
+<template name="Two">
+  {{> modal}}
+  {{> Nav}}
+
+  <h1>Page Two</h1>
+</template>
+
+<template name='modal'>
+  <div id='modal' class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">{{routeName}}</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</template>
+
+<template name="Nav">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/one">Page One</a>
+    </li>
+    <li>
+      <a href="/two">Page Two</a>
+    </li>
+  </ul>
+</template>
